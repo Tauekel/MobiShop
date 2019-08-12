@@ -1,0 +1,77 @@
+<div *ngIf="!loading">
+  <table *ngIf="imagesService.images.length; else noImages">
+    <tr *ngFor="let image of imagesService.images">
+      <td>
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img [src]="image.download_url">
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img [src]="image.download_url">
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img [src]="image.download_url">
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img [src]="image.download_url">
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img [src]="image.download_url">
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <ng-template #noImages>
+    <p style="text-align: center">No images now!</p>
+  </ng-template>
+</div>
+
+<div  *ngIf="loading" style="margin-top: 3rem;" class="preloader-wrapper active">
+  <div class="spinner-layer spinner-green-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+    <div class="circle"></div>
+  </div><div class="circle-clipper right">
+    <div class="circle"></div>
+  </div>
+  </div>
+</div>

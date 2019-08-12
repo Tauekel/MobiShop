@@ -1,0 +1,27 @@
+<nav>
+  <div class="nav-wrapper blue darken-3">
+    <a routerLink="" class="brand-logo" style="margin-left: 1rem; font-size: 17px">Главная страница</a>
+    <a routerLink="" class="sidenav-trigger" data-target="mobile-links">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="/services">Сервисы</a>
+      </li>
+      <li routerLinkActive="active"><a routerLink="/gallery">Галерея</a></li>
+      <li routerLinkActive="active"><a routerLink="/projects">Проекты</a></li>
+      <li routerLinkActive="active"><a routerLink="/web-projects">Web-проекты</a></li>
+      <li routerLinkActive="active"><a routerLink="/mobile-apps">Мобильные приложения</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-links" #sidenav>
+  <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <a routerLink="/services">Сервисы</a>
+  </li>
+  <li routerLinkActive="active"><a routerLink="/gallery">Галерея</a></li>
+  <li routerLinkActive="active"><a routerLink="/projects">Проекты</a></li>
+  <li routerLinkActive="active"><a routerLink="/web-projects">Web-проекты</a></li>
+  <li routerLinkActive="active"><a routerLink="/mobile-apps">Мобильные приложения</a></li>
+</ul>
